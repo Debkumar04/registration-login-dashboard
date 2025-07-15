@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login</title>
+  <script src="script.js" defer></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+  <form id="loginForm" class="bg-white p-8 rounded shadow-md w-full max-w-md">
+    <h2 class="text-2xl font-bold mb-6 text-center">Login</h2>
+
+    <!-- Email -->
+    <label class="block mb-2">Email</label>
+    <input type="email" id="loginEmail" class="input" required />
+
+    <!-- Password -->
+    <label class="block mt-4 mb-2">Password</label>
+    <div class="relative">
+      <input type="password" id="loginPassword" class="input pr-10" required />
+      <span onclick="togglePassword('loginPassword')" class="absolute right-2 top-2 cursor-pointer">👁️</span>
+    </div>
+
+    <!-- Login Button -->
+    <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded w-full mt-6">Login</button>
+
+    <!-- Message -->
+    <p id="loginError" class="text-red-500 text-sm mt-4 hidden text-center">Invalid credentials</p>
+  </form>
+
+  <style>
+    .input {
+      width: 100%;
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 0.375rem;
+    }
+  </style>
+</body>
+</html>
