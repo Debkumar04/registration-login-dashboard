@@ -114,8 +114,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-
-  
   const loginForm = document.getElementById("loginForm");
   if (loginForm) {
     loginForm.addEventListener("submit", function (e) {
@@ -141,7 +139,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-
+  
   if (window.location.pathname.includes("dashboard.html")) {
     const email = sessionStorage.getItem("loggedInUser");
     if (!email) {

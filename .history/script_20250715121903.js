@@ -114,8 +114,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-
-  
   const loginForm = document.getElementById("loginForm");
   if (loginForm) {
     loginForm.addEventListener("submit", function (e) {
@@ -137,9 +135,6 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "dashboard.html";
     });
   }
-
-
-
 
 
   if (window.location.pathname.includes("dashboard.html")) {

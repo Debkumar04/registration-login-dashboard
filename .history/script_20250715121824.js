@@ -1,3 +1,4 @@
+
 function togglePassword(id) {
   const input = document.getElementById(id);
   if (input) {
@@ -50,8 +51,9 @@ function logout() {
   window.location.href = "login.html";
 }
 
-
+// ========== PAGE-SPECIFIC LOGIC ==========
 document.addEventListener("DOMContentLoaded", () => {
+  // REGISTER PAGE
   const registerForm = document.getElementById("registerForm");
   if (registerForm) {
     registerForm.addEventListener("submit", function (e) {
@@ -114,8 +116,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-
-  
+  // LOGIN PAGE
   const loginForm = document.getElementById("loginForm");
   if (loginForm) {
     loginForm.addEventListener("submit", function (e) {
@@ -138,10 +139,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-
-
-
-
+  // DASHBOARD PAGE
   if (window.location.pathname.includes("dashboard.html")) {
     const email = sessionStorage.getItem("loggedInUser");
     if (!email) {
