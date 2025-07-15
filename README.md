@@ -123,7 +123,3 @@ Tailwind CSS used via CDN for rapid UI styling
 - Git and GitHub workflows
 
 ---
-
-## 📃 License
-
-This project is open source and free to use under the [MIT License](LICENSE).
